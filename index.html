@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RAÍZ — Estudio de restauración</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav__inner">
+    
+    <a href="index.html" class="nav__logo" aria-label="Volver al inicio">
+      <img src="assets/logo/logoraiz.png" alt="RAÍZ" class="nav__logo-img">
+    </a>
+
+    <div class="nav-hero__pill">
+      <a href="#"         class="nav-hero__link nav-hero__link--active">Inicio</a>
+      <a href="#proceso"  class="nav-hero__link">Proceso</a>
+      <a href="#cursos"   class="nav-hero__link">Cursos</a>
+      <a href="#proyectos"class="nav-hero__link">Proyectos</a>
+      <a href="#contacto" class="nav-hero__link">Contacto</a>
+    </div>
+
+    <a href="#contacto" class="nav-hero__cta">Contactanos</a>
+
+  </div>
+</nav>
+
+<section class="hero-raiz" aria-label="Presentación principal">
+
+  <div class="hero-raiz__base"></div>
+
+  <div class="hero-raiz__reveal" id="heroReveal"></div>
+
+  <canvas class="hero-raiz__canvas" id="heroCanvas"></canvas>
+
+  <div class="hero-raiz__heading" style="top: 30%; left: var(--gutter, 2.5rem); right: auto; align-items: flex-start; text-align: left; max-width: 620px;">
+    
+    <h1 class="hero-raiz__h1" style="align-items: flex-start;">
+      <span class="hero-raiz__line1" style="font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-style: normal; font-size: clamp(2.5rem, 6vw, 4.5rem); text-transform: none !important;">Diseñamos</span>
+      <span class="hero-raiz__line2" style="font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-style: normal; font-size: clamp(2.5rem, 6vw, 4.5rem); text-transform: none; margin-top: 0.5rem;">nuevas posibilidades.</span>
+    </h1>
+
+    <p style="font-family: 'Inter', sans-serif; font-size: clamp(14px, 1.3vw, 17px); line-height: 1.6; color: rgba(255, 255, 255, 0.85); margin: 1.5rem 0 2rem 0; pointer-events: auto;">
+      Intervenimos piezas existentes mediante restauración, diseño y nuevas materialidades para crear muebles contemporáneos, únicos y funcionales.
+    </p>
+
+    <a href="#proceso" class="button" style="--clr: var(--color-accent, #e8702a); pointer-events: auto; margin-bottom: 4rem;">
+  <span class="button__icon-wrapper">
+    <svg viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="button__icon-svg" width="10">
+      <path d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z" fill="currentColor"></path>
+    </svg>
+    <svg viewBox="0 0 14 15" fill="none" width="10" xmlns="http://www.w3.org/2000/svg" class="button__icon-svg button__icon-svg--copy">
+      <path d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z" fill="currentColor"></path>
+    </svg>
+  </span>
+  Conocer más
+</a>
+
+  </div>
+
+  <p class="hero-raiz__desc-left" style="bottom: 2.5rem; left: var(--gutter, 2.5rem); max-width: none; white-space: nowrap; display: block;">
+    Estudio de restauración. Muebles con pasado, rediseñados para habitar el presente.
+  </p>
+
+</section>
+
+    <section class="studio-pillars" id="conceptos" aria-label="Pilares de nuestro estudio">
+  <div class="studio-pillars__inner">
+    
+    <div class="pillars-grid">
+      
+      <article class="pillar-card js-scroll-reveal" data-flipped="false">
+        <div class="pillar-card__cube">
+          
+          <div class="pillar-card__front">
+            <div class="pillar-card__content">
+              <h3 class="pillar-card__title">Forma</h3>
+            </div>
+            <div class="pillar-card__media-wrap">
+              <img src="assets/images/cardsmuebles1.png" alt="Diseño y Forma" class="pillar-card__image" loading="lazy">
+            </div>
+          </div>
+          
+          <div class="pillar-card__back">
+            <div class="pillar-back-wrapper">
+              <img src="assets/icons/iconos_1.png" alt="Icono Forma" class="pillar-back__icon" loading="lazy">
+              <h4 class="pillar-back__title">Forma</h4>
+              <hr class="pillar-back__divider">
+              <p class="pillar-back__text">Cada intervención redefine la silueta y el carácter del mueble.</p>
+              
+              <footer class="pillar-back__footer">
+                <span class="pillar-back__footer-left">Diseño con origen.</span>
+                <span class="pillar-back__footer-right">raíz</span>
+              </footer>
+            </div>
+          </div>
+          
+        </div>
+      </article>
+
+      <article class="pillar-card js-scroll-reveal" data-flipped="false">
+        <div class="pillar-card__cube">
+          
+          <div class="pillar-card__front">
+            <div class="pillar-card__content">
+              <h3 class="pillar-card__title">Materialidad</h3>
+            </div>
+            <div class="pillar-card__media-wrap">
+              <img src="assets/images/cardsmuebles2.png" alt="Materiales y Texturas" class="pillar-card__image" loading="lazy">
+            </div>
+          </div>
+          
+          <div class="pillar-card__back">
+            <div class="pillar-back-wrapper">
+              <img src="assets/icons/iconos_2.png" alt="Icono Materialidad" class="pillar-back__icon" loading="lazy">
+              <h4 class="pillar-back__title">Materialidad</h4>
+              <hr class="pillar-back__divider">
+              <p class="pillar-back__text">Seleccionamos acabados que potencian la pieza y dialogan con espacios contemporáneos.</p>
+              
+              <footer class="pillar-back__footer">
+                <span class="pillar-back__footer-left">Diseño con origen.</span>
+                <span class="pillar-back__footer-right">raíz</span>
+              </footer>
+            </div>
+          </div>
+          
+        </div>
+      </article>
+
+      <article class="pillar-card js-scroll-reveal" data-flipped="false">
+        <div class="pillar-card__cube">
+          
+          <div class="pillar-card__front">
+            <div class="pillar-card__content">
+              <h3 class="pillar-card__title">Función</h3>
+            </div>
+            <div class="pillar-card__media-wrap">
+              <img src="assets/images/cardsmuebles3.png" alt="Uso y Función" class="pillar-card__image" loading="lazy">
+            </div>
+          </div>
+          
+          <div class="pillar-card__back">
+            <div class="pillar-back-wrapper">
+              <img src="assets/icons/iconos_3.png" alt="Icono Función" class="pillar-back__icon" loading="lazy">
+              <h4 class="pillar-back__title">Función</h4>
+              <hr class="pillar-back__divider">
+              <p class="pillar-back__text">Adaptamos cada objeto para responder a nuevas formas de habitar.</p>
+              
+              <footer class="pillar-back__footer">
+                <span class="pillar-back__footer-left">Diseño con origen.</span>
+                <span class="pillar-back__footer-right">raíz</span>
+              </footer>
+            </div>
+          </div>
+          
+        </div>
+      </article>
+
+      <article class="pillar-card js-scroll-reveal" data-flipped="false">
+        <div class="pillar-card__cube">
+          
+          <div class="pillar-card__front">
+            <div class="pillar-card__content">
+              <h3 class="pillar-card__title">Identidad</h3>
+            </div>
+            <div class="pillar-card__media-wrap">
+              <img src="assets/images/cardsmuebles4.png" alt="Identidad Única" class="pillar-card__image" loading="lazy">
+            </div>
+          </div>
+          
+          <div class="pillar-card__back">
+            <div class="pillar-back-wrapper">
+              <img src="assets/icons/iconos_4.png" alt="Icono Identidad" class="pillar-back__icon" loading="lazy">
+              <h4 class="pillar-back__title">Identidad</h4>
+              <hr class="pillar-back__divider">
+              <p class="pillar-back__text">Cada mueble termina siendo una pieza única, diseñada para perdurar.</p>
+              
+              <footer class="pillar-back__footer">
+                <span class="pillar-back__footer-left">Diseño con origen.</span>
+                <span class="pillar-back__footer-right">raíz</span>
+              </footer>
+            </div>
+          </div>
+          
+        </div>
+      </article>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+       <section class="editorial" id="editorial" aria-label="El valor está en la transformación">
+  <div class="editorial__pin">
+    <div class="editorial__frame">
+ 
+      <div class="editorial__media" id="editorialMedia">
+        <video
+          class="editorial__video"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="metadata"
+          poster="/assets/editorial/poster-silla.jpg">
+          <source src="assets/images/videoeditorial.mp4" type="video/mp4">
+        </video>
+      </div>
+ 
+      <div class="editorial__title-scrim" id="editorialScrim" aria-hidden="true"></div>
+      <div class="editorial__text-group" id="editorialTextGroup">
+        <span class="editorial__eyebrow" id="editorialEyebrow">Nuestro enfoque — estudio de restauración</span>
+        <h2 class="editorial__title" id="editorialTitle">
+          <span class="editorial__title-part editorial__title-part--light">El valor está en</span>
+          <span class="editorial__title-part editorial__title-part--bold">la transformación.</span>
+        </h2>
+      </div>
+ 
+    </div>
+  </div>
+</section>
+
+<section class="services" aria-label="Servicios de restauración">
+  <div class="services__inner">
+
+    <header class="services__header">
+      <p class="services__eyebrow">Especialidades</p>
+      <h2 class="services__title">Restauración, diseño y oficio.</h2>
+    </header>
+
+    <div class="services__accordion">
+
+      <!-- Panel 01 -->
+      <article class="service-panel">
+        <div class="service-panel__bg" style="background-image: url('assets/images/imagen_4.jpg');"></div>
+        <div class="service-panel__overlay"></div>
+        <div class="service-panel__line"></div>
+        <div class="service-panel__collapsed">
+          <span class="service-panel__collapsed-title">Restauración Integral</span>
+        </div>
+        <div class="service-panel__content">
+          <span class="service-panel__number">01</span>
+          <h3 class="service-panel__title">Restauración Integral<br> </h3>
+          <p class="service-panel__desc">
+            Intervención completa de estructura, superficie y acabado. 
+            Devolvemos la pieza a su estado original respetando su historia 
+            y carácter únicos.
+          </p>
+          <span class="service-panel__tag">Más solicitado</span>
+        </div>
+      </article>
+
+      <!-- Panel 02 -->
+      <article class="service-panel">
+        <div class="service-panel__bg" style="background-image: url('assets/images/imagen_3.jpg');"></div>
+        <div class="service-panel__overlay"></div>
+        <div class="service-panel__line"></div>
+        <div class="service-panel__collapsed">
+          <span class="service-panel__collapsed-title">Renovación de Tapizados</span>
+        </div>
+        <div class="service-panel__content">
+          <span class="service-panel__number">02</span>
+          <h3 class="service-panel__title">Renovación de Tapizados</h3>
+          <p class="service-panel__desc">
+            Renovamos rellenos, muelles y telas con materiales de alta 
+            durabilidad. Técnica tradicional combinada con acabados 
+            contemporáneos.
+          </p>
+          <span class="service-panel__tag">Butacas · Sillas · Sofás</span>
+        </div>
+      </article>
+
+      <!-- Panel 03 -->
+      <article class="service-panel">
+        <div class="service-panel__bg" style="background-image: url('assets/images/imagen_1.jpg');"></div>
+        <div class="service-panel__overlay"></div>
+        <div class="service-panel__line"></div>
+        <div class="service-panel__collapsed">
+          <span class="service-panel__collapsed-title">Consolidación Estructural</span>
+        </div>
+        <div class="service-panel__content">
+          <span class="service-panel__number">03</span>
+          <h3 class="service-panel__title">Consolidación Estructural<br> </h3>
+          <p class="service-panel__desc">
+            Consolidamos uniones, encastres y fracturas con colas de 
+            carpintería de alta resistencia para devolver solidez y 
+            estabilidad a cada pieza.
+          </p>
+          <span class="service-panel__tag">Estructuras · Encastres</span>
+        </div>
+      </article>
+
+      <!-- Panel 04 -->
+      <article class="service-panel">
+        <div class="service-panel__bg" style="background-image: url('assets/images/imagen_2.jpg');"></div>
+        <div class="service-panel__overlay"></div>
+        <div class="service-panel__line"></div>
+        <div class="service-panel__collapsed">
+          <span class="service-panel__collapsed-title">Recuperación de Madera</span>
+        </div>
+        <div class="service-panel__content">
+          <span class="service-panel__number">04</span>
+          <h3 class="service-panel__title">Recuperación de Madera<br> </h3>
+          <p class="service-panel__desc">
+            Limpieza profunda y decapado de barnices y pinturas antiguas 
+            para revelar la madera original y prepararla para un nuevo 
+            acabado.
+          </p>
+          <span class="service-panel__tag">Decapado · Limpieza</span>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+  <section class="courses" id="cursos" aria-label="Nuestros cursos">
+  <div class="courses__inner">
+    
+
+
+    <header class="courses__header">
+      <p class="courses__eyebrow">Formación</p>
+      <h2 class="courses__title">Aprendé a transformar.</h2>
+    </header>
+
+    
+    <div class="courses__carousel-container">
+      
+      <button class="courses__nav-btn courses__nav-btn--prev" id="coursePrev" aria-label="Tarjeta anterior">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 19l-7-7 7-7"/></svg>
+      </button>
+
+      <div class="courses__wrapper">
+
+        <article class="course-card is-left" data-index="0">
+  <div class="course-card__media">
+    <img src="assets/images/curso1.jpg" alt="Curso de Restauración Integral" loading="lazy">
+  </div>
+  <div class="course-card__content">
+    <span class="course-card__level">Nivel Inicial</span>
+    
+    <h3 class="course-card__title">Restauración Integral</h3>
+    <p class="course-card__desc">Aprendé técnicas tradicionales de ebanistería, tratamiento de maderas y acabados clásicos desde cero.</p>
+    
+    <a href="cursos.html" class="button button--card" style="--clr: var(--color-accent, #e8702a);">
+      <span class="button__icon-wrapper">
+        <svg viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="button__icon-svg" width="10">
+          <path d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z" fill="currentColor"></path>
+        </svg>
+        <svg viewBox="0 0 14 15" fill="none" width="10" xmlns="http://www.w3.org/2000/svg" class="button__icon-svg button__icon-svg--copy">
+          <path d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z" fill="currentColor"></path>
+        </svg>
+      </span>
+      Saber más
+    </a>
+  </div>
+</article>
+
+        <article class="course-card is-active" data-index="1">
+          
+          <div class="course-card__media">
+            <img src="assets/images/curso2.jpg" alt="Curso de Tapizado Contemporáneo" loading="lazy">
+          </div>
+          <div class="course-card__content">
+            <span class="course-card__level">Nivel Intermedio</span>
+            <h3 class="course-card__title">Tapizado Técnico</h3>
+            <p class="course-card__desc">Domina el uso de cinchas, resortes y espumas modernas para revivir sillas, butacas y sillones de diseño.</p>
+          <a href="cursos.html" class="button button--card" style="--clr: var(--color-accent, #e8702a);">
+      <span class="button__icon-wrapper">
+        <svg viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="button__icon-svg" width="10">
+          <path d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z" fill="currentColor"></path>
+        </svg>
+        <svg viewBox="0 0 14 15" fill="none" width="10" xmlns="http://www.w3.org/2000/svg" class="button__icon-svg button__icon-svg--copy">
+          <path d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z" fill="currentColor"></path>
+        </svg>
+      </span>
+      Saber más
+    </a>
+          
+          </div>
+        </article>
+
+        <article class="course-card is-right" data-index="2">
+          
+          <div class="course-card__media">
+            <img src="assets/images/curso3.jpg" alt="Curso de Acabados Especiales" loading="lazy">
+          </div>
+          <div class="course-card__content">
+            <span class="course-card__level">Nivel Avanzado</span>
+            <h3 class="course-card__title">Lustre & Acabados</h3>
+            <p class="course-card__desc">Especializate en técnicas de lavado de madera, pátinas contemporáneas, protección mate y lustre a la goma laca.</p>
+          <a href="cursos.html" class="button button--card" style="--clr: var(--color-accent, #e8702a);">
+      <span class="button__icon-wrapper">
+        <svg viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="button__icon-svg" width="10">
+          <path d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z" fill="currentColor"></path>
+        </svg>
+        <svg viewBox="0 0 14 15" fill="none" width="10" xmlns="http://www.w3.org/2000/svg" class="button__icon-svg button__icon-svg--copy">
+          <path d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z" fill="currentColor"></path>
+        </svg>
+      </span>
+      Saber más
+    </a>
+          
+          </div>
+        </article>
+
+      </div>
+
+      <button class="courses__nav-btn courses__nav-btn--next" id="courseNext" aria-label="Siguiente tarjeta">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 5l7 7-7 7"/></svg>
+      </button>
+
+    </div>
+  </div>
+</section>
+
+    <section class="editorial-statement" aria-label="Nuestra mirada">
+  <div class="marquee-wrapper">
+    <div class="marquee-track">
+      
+      <span class="marquee-item">
+        <img src="assets/icons/iconos_1.png" class="marquee-icon" alt="Icono" loading="lazy">
+        Recuperamos materia. Creamos diseño.
+      </span>
+
+      <span class="marquee-item">
+        <img src="assets/icons/iconos_2.png" class="marquee-icon" alt="Icono" loading="lazy">
+        Recuperamos materia. Creamos diseño.
+      </span>
+
+    </div>
+
+    <div class="marquee-track" aria-hidden="true">
+      
+      <span class="marquee-item">
+        <img src="assets/icons/iconos_3.png" class="marquee-icon" alt="Icono" loading="lazy">
+        Recuperamos materia. Creamos diseño.
+      </span>
+
+      <span class="marquee-item">
+        <img src="assets/icons/iconos_4.png" class="marquee-icon" alt="Icono" loading="lazy">
+        Recuperamos materia. Creamos diseño.
+      </span>
+
+    </div>
+  </div>
+</section>
+
+    <section class="gallery" id="proyectos" aria-label="Galería de proyectos">
+  <div class="gallery__inner">
+
+    <header class="gallery__header">
+      <p class="gallery__eyebrow">Proyectos</p>
+      <h2 class="gallery__title">Intervenciones recientes.</h2>
+    </header>
+
+    <div class="gallery__grid">
+
+      <!-- Proyecto 01 — Vertical grande (izquierda, ocupa 2 filas) -->
+      <article class="gallery-item gallery-item--tall">
+        <div class="gallery-item__media">
+          <img src="assets/images/galeria1.jpg" alt="Escritorio moderno restaurado" loading="lazy">
+        </div>
+        <div class="gallery-item__badge">
+          <span class="gallery-item__number">01</span>
+        </div>
+        <div class="gallery-item__overlay">
+          <h3 class="gallery-item__title">Escritorio moderno restaurado</h3>
+          <p class="gallery-item__meta">2024 · Restauración estructural y acabado contemporáneo</p>
+        </div>
+      </article>
+
+      <!-- Proyecto 02 -->
+      <article class="gallery-item">
+        <div class="gallery-item__media">
+          <img src="assets/images/galeria2.jpg" alt="Silla Thonet N°14" loading="lazy">
+        </div>
+        <div class="gallery-item__badge">
+          <span class="gallery-item__number">02</span>
+        </div>
+        <div class="gallery-item__overlay">
+          <h3 class="gallery-item__title">Silla Thonet N°14</h3>
+          <p class="gallery-item__meta">2025 · Reposición de encastres y tapizado de cuero</p>
+        </div>
+      </article>
+
+      <!-- Proyecto 03 -->
+      <article class="gallery-item">
+        <div class="gallery-item__media">
+          <img src="assets/images/galeria3.jpg" alt="Vajillero Art Déco restaurado" loading="lazy">
+        </div>
+        <div class="gallery-item__badge">
+          <span class="gallery-item__number">03</span>
+        </div>
+        <div class="gallery-item__overlay">
+          <h3 class="gallery-item__title">Vajillero Art Déco</h3>
+          <p class="gallery-item__meta">2026 · Restauración de marquetería y herrajes</p>
+        </div>
+      </article>
+
+      <!-- Proyecto 04 -->
+      <article class="gallery-item">
+        <div class="gallery-item__media">
+          <img src="assets/images/galeria4.jpg" alt="Silla de diseño restaurada" loading="lazy">
+        </div>
+        <div class="gallery-item__badge">
+          <span class="gallery-item__number">04</span>
+        </div>
+        <div class="gallery-item__overlay">
+          <h3 class="gallery-item__title">Silla de diseño escandinava</h3>
+          <p class="gallery-item__meta">2023 · Recuperación de estructura y retapizado</p>
+        </div>
+      </article>
+
+      <!-- Proyecto 05 -->
+      <article class="gallery-item">
+        <div class="gallery-item__media">
+          <img src="assets/images/galeria6.jpg" alt="Mesa de diseño restaurada" loading="lazy">
+        </div>
+        <div class="gallery-item__badge">
+          <span class="gallery-item__number">05</span>
+        </div>
+        <div class="gallery-item__overlay">
+          <h3 class="gallery-item__title">Mesa de diseño</h3>
+          <p class="gallery-item__meta">2026 · diseño a medida</p>
+        </div>
+      </article>
+
+      <!-- Proyecto 06 — Banner ancho (ocupa toda la fila) -->
+      <article class="gallery-item gallery-item--wide">
+        <div class="gallery-item__media">
+          <img src="assets/images/galeria5.jpg" alt="Sillon de cuero retapizado" loading="lazy">
+        </div>
+        <div class="gallery-item__badge">
+          <span class="gallery-item__number">06</span>
+        </div>
+        <div class="gallery-item__overlay">
+          <h3 class="gallery-item__title">sillon de cuero</h3>
+          <p class="gallery-item__meta">2026 · Restauración completa y cambio de tapizado</p>
+        </div>
+      </article>
+
+    </div>
+
+  </div>
+</section>
+
+
+<section class="product-tour" id="productTour">
+  <div class="product-tour__inner">
+ 
+    <header class="product-tour__header">
+      <span class="product-tour__eyebrow">Atelier de restauración — Pieza n.º 04</span>
+      <h2 class="product-tour__title">Recorrido interactivo<br><span class="product-tour__title--highlight">de restauración</span></h2>
+    </header>
+ 
+    <div class="product-tour__stage" id="tourStage">
+      <div class="product-tour__figure" id="tourFigure">
+        <img src="assets/images/silla3d.png"
+          alt="Sillón bergère restaurado, vista frontal en tres cuartos"
+          draggable="false"
+        >
+ 
+        <button class="hotspot" style="--x:46%; --y:14%;" data-id="1" aria-expanded="false" aria-label="Ver detalle: Tapizado artesanal">
+          <span class="hotspot__ring" aria-hidden="true"></span>
+          <span class="hotspot__core" aria-hidden="true"></span>
+        </button>
+ 
+        <button class="hotspot" style="--x:39%; --y:50%;" data-id="2" aria-expanded="false" aria-label="Ver detalle: Relleno técnico renovado">
+          <span class="hotspot__ring" aria-hidden="true"></span>
+          <span class="hotspot__core" aria-hidden="true"></span>
+        </button>
+ 
+        <button class="hotspot" style="--x:67%; --y:63%;" data-id="3" aria-expanded="false" aria-label="Ver detalle: Lustre a la goma laca">
+          <span class="hotspot__ring" aria-hidden="true"></span>
+          <span class="hotspot__core" aria-hidden="true"></span>
+        </button>
+ 
+        <button class="hotspot" style="--x:63%; --y:83%;" data-id="4" aria-expanded="false" aria-label="Ver detalle: Herrajes de latón restaurados">
+          <span class="hotspot__ring" aria-hidden="true"></span>
+          <span class="hotspot__core" aria-hidden="true"></span>
+        </button>
+      </div>
+ 
+      <div class="product-tour__overlay" id="tourOverlay">
+        <svg><line id="connectorLine" class="connector-line" x1="0" y1="0" x2="0" y2="0"></line></svg>
+ 
+        <div class="tour-tooltip" data-tooltip-for="1" id="tooltip-1">
+          <span class="tour-tooltip__eyebrow">01 — Respaldo</span>
+          <span class="tour-tooltip__title">Tapizado artesanal</span>
+          <span class="tour-tooltip__text">Lino de trama gruesa, tensado y cosido a mano siguiendo el patrón original de la casa.</span>
+        </div>
+ 
+        <div class="tour-tooltip" data-tooltip-for="2" id="tooltip-2">
+          <span class="tour-tooltip__eyebrow">02 — Asiento</span>
+          <span class="tour-tooltip__title">Relleno técnico renovado</span>
+          <span class="tour-tooltip__text">Espuma de alta densidad y pluma envueltas en muselina, para conservar el tacto de origen.</span>
+        </div>
+ 
+        <div class="tour-tooltip" data-tooltip-for="3" id="tooltip-3">
+          <span class="tour-tooltip__eyebrow">03 — Estructura</span>
+          <span class="tour-tooltip__title">Lustre a la goma laca</span>
+          <span class="tour-tooltip__text">Siete manos aplicadas a muñequilla, puliendo entre capas hasta lograr el brillo espejo.</span>
+        </div>
+ 
+        <div class="tour-tooltip" data-tooltip-for="4" id="tooltip-4">
+          <span class="tour-tooltip__eyebrow">04 — Base</span>
+          <span class="tour-tooltip__title">Herrajes de latón restaurados</span>
+          <span class="tour-tooltip__text">Latón macizo desoxidado a mano y sellado con cera microcristalina.</span>
+        </div>
+      </div>
+    </div>
+ 
+    <p class="product-tour__plaque">N.º inventario 04 — Sillón bergère, haya y latón, ca. 1960. Restaurado en obrador propio.</p>
+ 
+  </div>
+</section>
+
+ 
+<!-- ============================================================
+     HTML — BEM: .capsule-collection es el bloque raíz
+     ============================================================ -->
+<section class="capsule-collection" id="capsuleCollection">
+  <div class="capsule-collection__inner">
+ 
+    <header class="capsule-collection__header">
+      <span class="capsule-collection__eyebrow">Piezas únicas. Sin repetición.</span>
+      <h2 class="cap-section__title">Muebles Cápsula<span class="cap-section__title--highlight"> </span>
+</h2>
+      <p class="capsule-collection__subtitle">Ocho piezas nacidas de retazos de tela que no íbamos a usar. Ningún patchwork se repite dos veces.</p>
+    </header>
+ 
+    <div class="capsule-collection__circle-wrap">
+      <div class="capsule-circle" id="capsuleCircle">
+ 
+        <article class="capsule-card" style="--i:0;">
+          <div class="capsule-card__inner">
+            <div class="capsule-card__patch" aria-hidden="true"></div>
+
+            <div class="capsule-card__image-box">
+          <img src="assets/images/capsula1.jpg" alt="Sillón Retazo" class="capsule-card__img">
+        </div>
+
+            <p class="capsule-card__caption">
+              <span class="capsule-card__name">Sillón Retazo</span>
+              <span class="capsule-card__note">Lino y algodón reciclado</span>
+            </p>
+          </div>
+        </article>
+ 
+        <article class="capsule-card" style="--i:1;">
+          <div class="capsule-card__inner">
+            <div class="capsule-card__patch" aria-hidden="true"></div>
+
+<div class="capsule-card__image-box">
+          <img src="assets/images/capsula2.jpg" alt="Sillón Retazo" class="capsule-card__img">
+        </div>
+
+            <p class="capsule-card__caption">
+              <span class="capsule-card__name">Puf Mosaico</span>
+              <span class="capsule-card__note">Sobrantes de pana</span>
+            </p>
+          </div>
+        </article>
+ 
+        <article class="capsule-card" style="--i:2;">
+          <div class="capsule-card__inner">
+            <div class="capsule-card__patch" aria-hidden="true"></div>
+
+<div class="capsule-card__image-box">
+          <img src="assets/images/capsula3.jpg" alt="Sillón Retazo" class="capsule-card__img">
+        </div>
+
+            <p class="capsule-card__caption">
+              <span class="capsule-card__name">Banqueta Trama</span>
+              <span class="capsule-card__note">Restos de lana cruda</span>
+            </p>
+          </div>
+        </article>
+ 
+        <article class="capsule-card" style="--i:3;">
+          <div class="capsule-card__inner">
+            <div class="capsule-card__patch" aria-hidden="true"></div>
+<div class="capsule-card__image-box">
+          <img src="assets/images/capsula4.jpg" alt="Sillón Retazo" class="capsule-card__img">
+        </div>
+
+            <p class="capsule-card__caption">
+              <span class="capsule-card__name">Diván Remanente</span>
+              <span class="capsule-card__note">Telas de fin de rollo</span>
+            </p>
+          </div>
+        </article>
+ 
+        <article class="capsule-card" style="--i:4;">
+          <div class="capsule-card__inner">
+            <div class="capsule-card__patch" aria-hidden="true"></div>
+            <div class="capsule-card__image-box">
+          <img src="assets/images/capsula5.jpg" alt="Sillón Retazo" class="capsule-card__img">
+        </div>
+            <p class="capsule-card__caption">
+              <span class="capsule-card__name">Cabecero Collage</span>
+              <span class="capsule-card__note">Descarte de tapicería</span>
+            </p>
+          </div>
+        </article>
+ 
+        <article class="capsule-card" style="--i:5;">
+          <div class="capsule-card__inner">
+            <div class="capsule-card__patch" aria-hidden="true"></div>
+            <div class="capsule-card__image-box">
+          <img src="assets/images/capsula6.jpg" alt="Sillón Retazo" class="capsule-card__img">
+        </div>
+            <p class="capsule-card__caption">
+              <span class="capsule-card__name">Otomana Fragmento</span>
+              <span class="capsule-card__note">Cortes de muestrario</span>
+            </p>
+          </div>
+        </article>
+ 
+        <article class="capsule-card" style="--i:6;">
+          <div class="capsule-card__inner">
+            <div class="capsule-card__patch" aria-hidden="true"></div>
+<div class="capsule-card__image-box">
+          <img src="assets/images/capsula1.jpg" alt="Sillón Retazo" class="capsule-card__img">
+        </div>
+
+            <p class="capsule-card__caption">
+              <span class="capsule-card__name">Silla Bajorrelieve</span>
+              <span class="capsule-card__note">Retazos de lino crudo</span>
+            </p>
+          </div>
+        </article>
+ 
+        <article class="capsule-card" style="--i:7;">
+          <div class="capsule-card__inner">
+            <div class="capsule-card__patch" aria-hidden="true"></div>
+<div class="capsule-card__image-box">
+          <img src="assets/images/capsula2.jpg" alt="Sillón Retazo" class="capsule-card__img">
+        </div>
+
+            <p class="capsule-card__caption">
+              <span class="capsule-card__name">Puf Infantil</span>
+              <span class="capsule-card__note">Algodón orgánico sobrante</span>
+            </p>
+          </div>
+        </article>
+ 
+      </div>
+    </div>
+ 
+  </div>
+</section>
+
+
+    <section class="cta-final" id="contacto" aria-label="Llamada a la acción">
+      <div class="cta-final__inner">
+        <p class="cta-final__eyebrow">Trabajemos juntos</p>
+        <h2 class="cta-final__title">¿Tenés un mueble que merece una segunda vida?</h2>
+        <a href="mailto:hola@raiz.studio" class="btn btn--primary btn--large">Contactanos</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="footer__inner">
+
+      <div class="footer__brand">
+        <a href="index.html" class="nav__logo" aria-label="Volver al inicio">
+      <img src="assets/logo/logoraiz.png" alt="RAÍZ" class="nav__logo-img">
+    </a>
+        <p class="footer__tagline">Estudio de restauración integral de muebles.</p>
+      </div>
+
+      <nav class="footer__nav" aria-label="Navegación del pie de página">
+        <div class="footer__nav-col">
+          <p class="footer__nav-heading">Estudio</p>
+          <a href="#proceso" class="footer__nav-link">Proceso</a>
+          <a href="#proyectos" class="footer__nav-link">Proyectos</a>
+          <a href="#cursos" class="footer__nav-link">Cursos</a>
+        </div>
+        <div class="footer__nav-col">
+          <p class="footer__nav-heading">Contacto</p>
+          <a href="mailto:hola@raiz.studio" class="footer__nav-link">hola@raiz.studio</a>
+          <a href="tel:+541100000000" class="footer__nav-link">+54 11 0000-0000</a>
+          <p class="footer__nav-link">Buenos Aires, Argentina</p>
+        </div>
+        <div class="footer__nav-col">
+          <p class="footer__nav-heading">Seguinos</p>
+          <a href="#" class="footer__nav-link" aria-label="Instagram de RAÍZ">Instagram</a>
+          <a href="#" class="footer__nav-link" aria-label="Pinterest de RAÍZ">Pinterest</a>
+        </div>
+      </nav>
+
+    </div>
+
+    <div class="footer__bottom">
+      <p class="footer__legal">© 2024 RAÍZ. Todos los derechos reservados.</p>
+      <p class="footer__credit">Diseño web — Proyecto universitario</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>
